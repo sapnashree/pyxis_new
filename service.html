@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pyxis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<style>
+    .container_1{
+        padding:60px;
+        background:linear-gradient(#ffffffc4, #fffdfdbf), url(img/serve.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;margin-top: -47px
+    }
+    .flex-container {
+        display: flex;
+    padding: 20px;margin-left: 200px;
+    margin-right: 200px 
+    }
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: #063970;
+}
+    .flex-item {
+        text-align: center;
+    margin: 20px;
+    width: 60%;;
+    box-sizing: border-box;
+    background: #063970;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 95px;
+    }
+    .lis_name{
+        font-size: .9rem;
+    text-transform: capitalize;
+    background: black;
+    /* background: grey; */
+    color: white;
+    height: 59px;
+    font-weight: 300;
+    padding: 10px;
+    }
+.line_lgao{
+    position: relative;
+    height: 3px;
+    width: 6%;
+    background: #ffb403;
+    left: 47%;
+    margin-bottom: 10px;
+}
+.icon_n{
+    color: white;
+    font-size:30px;padding: 10px ;
+}
+    .description {
+        text-align: justify;
+    color: #4e4f52;
+    background: white;
+    padding: 40px;font-size: 14px;
+    /* margin-left: 26px;
+    margin-right: 26px;
+    width: 100%;
+    height: 100%; */
+    margin-left: 10%;
+    margin-right: 19px;
+    width: 80%;
+    }
+    ul, li{
+        text-align:justify;color: #4e4f52;
+    }
+    .client_image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+}
+.clientss{
+    display:flex;
+}
+.client_tag {
+    flex: 1;
+    max-width: 90%;
+   
+    padding: 20px;font-size: 3rem;
+}
+.selected {
+    background-color:#ffb403;
+}
+    .arrow {
+      position: relative;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #ffb403;
+    top: -4%;
+    left: 38%;
+    transform: rotate(180deg);
+}
+
+.client_tag2 {
+    text-align: justify;
+    padding: 20px;width: 90%;
+}
+@media (max-width: 768px) {
+    .flex-container {
+    display: flex;
+    padding: 20px;margin-left: 0px;
+    margin-right:0px ;
+    flex-direction: column !important;
+}
+   .clientss {
+       display: flex;
+       flex-direction: column;
+   }
+   .client_image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+.flex-item {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: #063970 1.95px 1.95px 2.6px;
+}
+.lis_name {
+    font-size: .9rem;
+    text-transform: capitalize;
+    background: grey;
+    color: white;
+    height: 59px;
+    font-weight: 300;
+    padding: 10px;
+    margin-left: -10px;
+    width: 271px;
+}
+.arrow{
+    display:none
+}
+.description {
+    text-align: justify;
+    color: #4e4f52;
+    background: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+
+
+}
+</style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+    >
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <h1 class="m-0">
+          <img
+            class="img-fluid me-3"
+            src="img/icon/logo.png"
+            alt=""
+          />
+        </h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto me-4 bg-light rounded pe-4 py-3 py-lg-0">
+            <a href="index.html" class="nav-item nav-link ">Home</a>
+            <a href="about.html" class="nav-item nav-link ">About Us</a>
+            <a href="service.html" class="nav-item nav-link active">Our Services</a>
+            <a href="owner.html" class="nav-item nav-link">PYXIS Initiative</a>
+            <a href="contact.html" class="nav-item nav-link">Reach Us</a>
+        </div>
+    </div>
+</nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn"
+    data-wow-delay="0.1s" >
+    <div class="container py-5">
+      <h1 class="display-4 animated slideInDown mb-4 text-white">Services</h1>
+      <nav aria-label="breadcrumb animated slideInDown text-center">
+        <ol class="breadcrumb mb-0 ">
+          <li class="breadcrumb-item text-center"><a href="#">Smart. Stable. Secure.</a></li><br><br><br><br>
+          <!-- <li class="breadcrumb-item text-center"><a href="#">Pages</a></li>
+          <li class="breadcrumb-item active text-center" aria-current="page">About</li> -->
+        </ol>
+      </nav>
+    </div>
+  </div>
+    <!-- Page Header End -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
+
+  <img src="assets/img/serve.jpg" alt="" class="bann_er">
+
+     <div class="container_1">
+          <h1 class="text-center" style="color:black;text-transform:uppercase;">OUR OFFERINGS</h1>
+       <div class="row">
+        <div class=" flex-part">
+            <div class="flex-container">
+              <div class="flex-item" onclick="showDescription('1', this)" data-description="1">
+                <i class="fas fa-chart-pie icon_n"></i>
+                <h4 class="lis_name"> <br>Mutual Fund</h4>
+            </div>
+        
+            <div class="flex-item" onclick="showDescription('2', this)" data-description="2">
+                <i class="fas fa-chart-line icon_n"></i>
+                <h4 class="lis_name"> Fixed Income Instruments</h4>
+            </div>
+        
+            <div class="flex-item" onclick="showDescription('3', this)" data-description="3">
+                <i class="fas fa-shield-alt icon_n"></i>
+                <h4 class="lis_name"> <br>Insurance</h4>
+            </div>
+            </div>
+
+        </div>
+  <div class=" flex-part">
+          <div class="description" id="1">
+              <h3>Mutual Fund</h3>
+              <div class="line_lgao"></div>
+              <div class="flex-containers" style="display: flex;">
+                  <img src="img/mutual_fund.avif" alt="" style="width: 50%;">
+                  <p style="padding: 30px;margin-top: 15px;">Mutual funds have become a popular tool for investments in the Equity Markets. Well-regulated Industry, Expert Fund Managers, Innovative offerings, Ease of Transactions, Transparency are the few salient features of this investment methodology. The inculcation of discipline through Systematic Investment Plan has helped millions of Indian families achieve their financial goals. An easy & convenient way to create wealth in the long term makes Mutual Fund the preferred choice of many investors.</p>
+              </div>
+          </div>
+      
+          <div class="description" id="2">
+              <h3>Fixed Income Instruments</h3>
+              <div class="line_lgao"></div>
+              <div class="flex-containers" style="display: flex;">
+                  <img src="img/fixed.jpg" alt="" style="width: 50%;">
+                  <p style="padding: 30px;margin-top:110px;">For Investors with goals for fixed income, a bouquet of products ranging from Bonds, NCD, Corporate Fixed Deposits is available. These instruments also help investors maintain their asset allocation and fund the most important goals of their life, like Children’s Higher Education, Children’s Marriage, and Monthly Income need during Retirement.</p>
+              </div>
+          </div>
+      
+          <div class="description" id="3">
+              <h3>Insurance</h3>
+              <div class="line_lgao"></div>
+              <div class="flex-containers" style="display: flex;">
+                  <img src="img/insurance.jpg" alt="" style="width: 50%;">
+                  <p style="padding: 30px;margin-top:80px;">Insurance protection is a must for everyone in this journey of achieving financial goals. Any untoward incident like untimely death or major sickness can derail the financial journey of not only the individual but of the entire family. Hence various types of Insurance cover, namely Term Insurance and Mediclaim Policies, are must for each and every household.</p>
+              </div>
+          </div>
+      </div>
+
+    </div>
+ </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Select the first flex item and trigger a click event to show its description
+        const firstFlexItem = document.querySelector('.flex-item');
+        if (firstFlexItem) {
+            firstFlexItem.click();
+        }
+    });
+
+    function showDescription(descriptionId, element) {
+        document.querySelectorAll('.description').forEach(desc => {
+            desc.style.display = 'none';
+        });
+
+        document.querySelectorAll('.flex-item').forEach(item => {
+            item.classList.remove('selected');
+            // Remove arrow elements from previous selections
+            item.querySelectorAll('.arrow').forEach(arrow => {
+                arrow.remove();
+            });
+        });
+
+        document.getElementById(descriptionId).style.display = 'block';
+
+        if (element && element.classList) {
+            // Add 'selected' class to the clicked flex-item
+            element.classList.add('selected');
+
+            // Create and append the arrow element below the selected item
+            const arrow = document.createElement('div');
+            arrow.className = 'arrow';
+
+            // Append the arrow to the selected item's container
+            element.appendChild(arrow);
+        }
+    }
+</script>
+
+   <!-- Footer Start -->
+   <div
+   class="container-fluid bg-dark footer wow fadeIn"
+   data-wow-delay="0.1s"
+ >
+   <div class="container py-5">
+     <div class="row g-5">
+       <div class="col-lg-6 col-md-6">
+         <h1 class="text-white  ">
+          Pyxis Wealth
+         </h1>
+         <p>
+           Unlock the Power of Mutual Funds, Secure Your Financial Destiny.
+         </p>
+         <div class="d-flex pt-2">
+           <a class="btn btn-square me-1" href=""
+             ><i class="fab fa-twitter"></i
+           ></a>
+           <a class="btn btn-square me-1" href=""
+             ><i class="fab fa-facebook-f"></i
+           ></a>
+           <a class="btn btn-square me-1" href=""
+             ><i class="fab fa-youtube"></i
+           ></a>
+           <a class="btn btn-square me-0" href=""
+             ><i class="fab fa-linkedin-in"></i
+           ></a>
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+         <h5 class="text-light mb-4">Address</h5>
+         <p>
+           <i class="fa fa-map-marker-alt me-3"></i>Pyxis Wealth Pvt Ltd
+           B -146, Jai Ganesh Vision Akurdi, Pune 411035.
+         </p>
+         <p><i class="fa fa-phone-alt me-3"></i>+91 9890636261</p>
+         <p><i class="fa fa-envelope me-3"></i>prashant@pyxiswealth.in</p>
+       </div>
+       <div class="col-lg-3 col-md-6">
+         <h5 class="text-light mb-4">Quick Links</h5>
+         <a class="btn btn-link" href="">About Us</a>
+         <a class="btn btn-link" href="">Contact Us</a>
+         <a class="btn btn-link" href="">Our Services</a>
+         <a class="btn btn-link" href="">Pyxis initiative</a>
+      
+       </div>
+      
+     </div>
+   </div>
+   <div class="container-fluid copyright">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+           &copy; <a href="#">Pyxis Wealth Private Ltd</a>, All Right Reserved.
+         </div>
+         <div class="col-md-6 text-center text-md-end">
+           Designed By <a href="https://vedhindia.com">Vedh India</a>
+          
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Footer End -->
+
+ <!-- Back to Top -->
+ <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+   ><i class="bi bi-arrow-up"></i
+ ></a>
+
+ <!-- JavaScript Libraries -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="lib/wow/wow.min.js"></script>
+ <script src="lib/easing/easing.min.js"></script>
+ <script src="lib/waypoints/waypoints.min.js"></script>
+ <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ <script src="lib/counterup/counterup.min.js"></script>
+
+ <!-- Template Javascript -->
+ <script src="js/main.js"></script>
+</body>
+</html>
+
+ 

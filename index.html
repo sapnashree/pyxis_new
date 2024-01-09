@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pyxis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+    
+  </style>
+  
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <nav  class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <h1 class="m-0">
+          <img
+            class="img-fluid me-3"
+            src="img/icon/logo.png"
+            alt=""
+          />
+        </h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto me-4 bg-light rounded pe-4 py-3 py-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+            <a href="service.html" class="nav-item nav-link">Our Services</a>
+            <a href="owner.html" class="nav-item nav-link">PYXIS Initiative</a>
+            <a href="contact.html" class="nav-item nav-link">Reach Us</a>
+        </div>
+    </div>
+  </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="w-100" src="img/carousel-1.jpg" alt="Image"  />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <h1 class="display-5 text-white mb-4 animated slideInDown" style="margin-top: -70px;margin-left: 30px;"> 
+                      Mutual Funds: Wealth for All
+                    </h1>
+                <!-- <p class="fs-5 text-body mb-5">
+                      Experience inclusive wealth creation with our mutual funds – making financial growth accessible to everyone, effortlessly.
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img class="w-100" src="img/carousel-2.jpg" alt="Image"/>
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <h1 class="display-5 text-white mb-4 animated slideInDown" style="margin-top: -150px;margin-left: 10px;"> 
+                      Your Wealth Journey Starts Here
+                    </h1>
+                    <!-- <p class="fs-5 text-body mb-5">
+                      Embark on your wealth journey with confidence and purpose — it all starts right here.
+                    </p> -->
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="position-relative overflow-hidden rounded ps-5 pt-5 h-100" style="min-height: 400px" >
+              <img class="position-absolute w-100" src="img/about.jpg" alt=""  />
+              <div
+                class="position-absolute top-0 start-0 bg-white rounded "
+                style="width: 200px; height: 200px;padding-bottom: 0.5rem !important;padding-right: 0.5rem !important;"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3"
+                >
+                  <h1 class="text-white mb-0">2+</h1>
+                  <h5 class="text-white mb-0">DECADES</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="h-100">
+              <h1 class="display-6" style="margin-top: 40px;">
+                Believe you can & <br> you are halfway there
+              </h1>
+              <div style="position: relative;width: 70px;height: 4px;margin:20px;background: #15233C;margin-left: 0px "></div>
+              <p class="mb-4" style="text-align: justify;font-size:14px;">Pyxis Wealth Private Limited is founded by Financial Services Veteran, Mr. Prashant Shejwal. Pyxis clients have benefited from two decades of rich experience in the Financial Services Industry across market and life cycles. Backed up by coveted International Certification's Prasant has gained expertise in offering clients end-to-end financial services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+    <!-- mission vision -->
+<!-- <section style="padding: 30px;">
+    <div class="mis-vis-container wow fadeIn">
+      <div class="mis-vis wow fadeIn">
+          <h4>Vision</h4>
+          <p>To be a leading financial investment <br>company creating wealth for its clients <br> by providing trustworthy guidance , <br> innovative yet simplified services , <br> demystifying investment jargons <br> for the benefit of society at large.</p>
+      </div>
+      <div class="mis-vis  mis-vis2 wow fadeIn">
+        <h4>Mission</h4>
+        <p>Our mission is to ensure individuals<br> achieve  their financial objectives by <br>channelising their  investments across<br>suitable investment  opportunities<br> assisted with our expertise and  skills <br>accumulated over the years and across<br> market cycles.</p>
+      </div>
+    </div>
+</section> -->
+    <!-- mission vision -->
+    <!-- Service Start -->
+    <div class="container-xxl py-5" style="background: #e9e9e9;">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 500px">
+          <h1 class="display-6">
+            Empowering Your Investments, Elevating Your Wealth
+          </h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/icon-10-light.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0">Mutual Fund</h4>
+              </div>
+              <p class="mb-4">
+                Mutual funds has become a popular tool for investments in the Equity Markets. Well regulated Industry , Expert Fund Managers , Innovative offerings , Ease of Transactions , Transparency are the few salient features of this investment methodology.....
+              </p>
+              <a class="btn btn-light px-3" href="">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/icon-01-light.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0">Fixed-Income Products</h4>
+              </div>
+              <p class="mb-4">
+                For Investors with goals for fixed income a bouquet of products ranging from Bonds, NCD, Corporate Fixed Deposits are available. This instruments also help investors to maintain their asset allocation and fund the most important goals of their life...
+              </p>
+              <a class="btn btn-light px-3" href="">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded h-100 p-5">
+              <div class="d-flex align-items-center ms-n5 mb-4">
+                <div
+                  class="service-icon flex-shrink-0 bg-primary rounded-end me-4"
+                >
+                  <img
+                    class="img-fluid"
+                    src="img/icon/icon-05-light.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="mb-0">Insurance- Life And Non-Life</h4>
+              </div>
+              <p class="mb-4">
+                Insurance protection is must for everyone in this journey of achieving financial goals. Any untoward incident like untimely death or major sickness can derail the financial journey of not only the individual but of the entire family......
+              </p>
+              <a class="btn btn-light px-3" href="">Read More</a>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Appointment Start -->
+    <div
+      class="container-fluid appointment py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+            <h1 class="display-6 text-white mb-5">
+              Connect with Confidence, We're Here for You.
+            </h1>
+            <p class="text-white mb-5">
+              Thank you for considering reaching out to us! We value your questions, feedback, and inquiries. Our team is here and ready to assist you in any way we can.
+            </p>
+            <div class="bg-white rounded p-3">
+              <div class="d-flex align-items-center bg-primary rounded p-3">
+                <img
+                  class="flex-shrink-0 rounded-circle me-3"
+                  src="img/about.jpg" alt="" style="width: 45px;  height: 45px;"
+                />
+                <h5 class="text-white mb-0">Call Us: +91 9890636261</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="bg-white rounded p-5">
+              <form>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="gname"
+                        placeholder="Gurdian Name"
+                      />
+                      <label for="gname">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="gmail"
+                        placeholder="Gurdian Email"
+                      />
+                      <label for="gmail">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cname"
+                        placeholder="Child Name"
+                      />
+                      <label for="cname">Your Mobile</label>
+                    </div>
+                  </div>
+                 
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style="height: 80px"
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary py-3 px-5" type="submit">
+                     Send
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Appointment End -->
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark footer wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-6 col-md-6">
+            <h1 class="text-white  ">
+             Pyxis Wealth
+            </h1>
+            <p>
+              Unlock the Power of Mutual Funds, Secure Your Financial Destiny.
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-square me-1" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-square me-0" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Address</h5>
+            <p>
+              <i class="fa fa-map-marker-alt me-3"></i>Pyxis Wealth Pvt Ltd
+              B -146, Jai Ganesh Vision Akurdi, Pune 411035.
+            </p>
+            <p><i class="fa fa-phone-alt me-3"></i>+91 9890636261</p>
+            <p><i class="fa fa-envelope me-3"></i>prashant@pyxiswealth.in</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Quick Links</h5>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Our Services</a>
+            <a class="btn btn-link" href="">Pyxis initiative</a>
+         
+          </div>
+         
+        </div>
+      </div>
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="#">Pyxis Wealth Private Ltd</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              Designed By <a href="https://vedhindia.com">Vedh India</a>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
