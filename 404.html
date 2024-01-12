@@ -38,15 +38,14 @@
 <style>
     .container_1{
         padding:60px;
-        background:linear-gradient(#b7b7b7e0, #c9c9c9e0), url(img/serve.jpg);
+        background:linear-gradient(#ffffffc4, #fffdfdbf), url(img/serve.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;margin-top: -47px
     }
     .flex-container {
         display: flex;
-    padding: 10px;margin-left: 200px;
-    margin-right: 200px 
+    padding: 20px;
     }
 h3{
     text-align: center;
@@ -60,7 +59,7 @@ h3{
     box-sizing: border-box;
     background: #063970;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    height: 87px;
+    height: 95px;
     }
     .lis_name{
         font-size: .9rem;
@@ -68,7 +67,7 @@ h3{
     background: black;
     /* background: grey; */
     color: white;
-    /* height: 59px; */
+    height: 59px;
     font-weight: 300;
     padding: 10px;
     }
@@ -76,7 +75,7 @@ h3{
     position: relative;
     height: 3px;
     width: 6%;
-    background: var(--primary);
+    background: #ffb403;
     left: 47%;
     margin-bottom: 10px;
 }
@@ -89,13 +88,10 @@ h3{
     color: #4e4f52;
     background: white;
     padding: 40px;font-size: 14px;
-    /* margin-left: 26px;
+    margin-left: 26px;
     margin-right: 26px;
     width: 100%;
-    height: 100%; */
-    margin-left: 10%;
-    margin-right: 19px;
-    width: 80%;
+    height: 100%;
     }
     ul, li{
         text-align:justify;color: #4e4f52;
@@ -115,18 +111,18 @@ h3{
     padding: 20px;font-size: 3rem;
 }
 .selected {
-    background-color:var(--primary);
+    background-color:#ffb403;
 }
     .arrow {
       position: relative;
     width: 0;
     height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid var(--primary);
-    top: -4%;
-    left: 42%;
-    transform: rotate(180deg);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #ffb403;
+    top: -78%;
+    left: 122%;
+    transform: rotate(89deg);
 }
 
 .client_tag2 {
@@ -136,8 +132,7 @@ h3{
 @media (max-width: 768px) {
     .flex-container {
     display: flex;
-    padding: 20px;margin-left: 0px;
-    margin-right:0px ;
+    padding: 20px;
     flex-direction: column !important;
 }
    .clientss {
@@ -196,21 +191,28 @@ h3{
     </div>
     <!-- Spinner End -->
     <!-- Navbar Start -->
-    <nav  class="navbar navbar-expand-lg  navbar-light sticky-top px-4 px-lg-5">
-      <a href="index.html" class="navbar-brand d-flex align-items-center" >
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+    >
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
         <h1 class="m-0">
           <img
             class="img-fluid me-3"
-            src="img/icon/logo.jpg"
+            src="img/icon/logo.png"
             alt=""
           />
         </h1>
       </a>
-      <button  type="button"  class="navbar-toggler"    data-bs-toggle="collapse"   data-bs-target="#navbarCollapse" >
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto me-4 rounded pe-4 py-3 py-lg-0">
+        <div class="navbar-nav ms-auto me-4 bg-light rounded pe-4 py-3 py-lg-0">
             <a href="index.html" class="nav-item nav-link ">Home</a>
             <a href="about.html" class="nav-item nav-link ">About Us</a>
             <a href="service.html" class="nav-item nav-link active">Our Services</a>
@@ -218,39 +220,35 @@ h3{
             <a href="contact.html" class="nav-item nav-link">Reach Us</a>
         </div>
     </div>
-  </nav>
+</nav>
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header2 py-5 mb-5 wow fadeIn "
-    data-wow-delay="0.1s"  style=" background: url(img/About_banner2.jpg) no-repeat;
-    background-size: cover;">
-    <div class="container jabbho abkab">
-      <h1 class="display-4 animated slideInDown mb-4 text-white">Services</h1>
-      <nav aria-label="breadcrumb animated slideInDown text-center">
-        <ol class="breadcrumb mb-0 ">
-          <li class="breadcrumb-item text-center"><a href="#">Smart. Stable. Secure.</a></li><br><br><br><br>
-          <!-- <li class="breadcrumb-item text-center">Smart. Stable. Secure.</a></li><br><br><br><br>
-          <li class="breadcrumb-item active text-center" aria-current="page">About</li> -->
-        </ol>
-      </nav>
+    <div
+      class="container-fluid page-header py-5 mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5 text-center">
+        <h1 class="display-4 animated slideInDown mb-4 text-center">About Us</h1>
+        <nav aria-label="breadcrumb animated slideInDown text-center">
+          <ol class="breadcrumb mb-0 ">
+            <li class="breadcrumb-item text-center"><a href="#">Home</a></li>
+            <li class="breadcrumb-item text-center"><a href="#">Pages</a></li>
+            <li class="breadcrumb-item active text-center" aria-current="page">Service</li>
+          </ol>
+        </nav>
+      </div>
     </div>
-  </div>
     <!-- Page Header End -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+ <div class="container_1">
+          <h1 class="text-center" style="color:#063970;text-transform:uppercase;font-weight:600">Our Offerings</h1>
 
-
-
-  <img src="assets/img/serve.jpg" alt="" class="bann_er">
-
-     <div class="container_1">
-          <h1 class="text-center" style="color:black;text-transform:uppercase;">OUR OFFERINGS</h1>
-       <div class="row">
-        <div class=" flex-part">
-            <div class="flex-container">
-              <div class="flex-item" onclick="showDescription('1', this)" data-description="1">
+       <div class="row" >
+        <div class="col-md-3 flex-part">
+          <div class="flex-container" style="justify-content: center; align-items: center; flex-direction: column;">
+            <div class="flex-item" onclick="showDescription('1', this)" data-description="1">
                 <i class="fas fa-chart-pie icon_n"></i>
-                <h4 class="lis_name">Mutual Fund</h4>
+                <h4 class="lis_name"> <br>Mutual Fund</h4>
             </div>
         
             <div class="flex-item" onclick="showDescription('2', this)" data-description="2">
@@ -260,16 +258,16 @@ h3{
         
             <div class="flex-item" onclick="showDescription('3', this)" data-description="3">
                 <i class="fas fa-shield-alt icon_n"></i>
-                <h4 class="lis_name">Insurance</h4>
+                <h4 class="lis_name"> <br>Insurance</h4>
             </div>
-            </div>
-
         </div>
-  <div class=" flex-part">
+        
+        </div>
+        <div class="col-md-8 flex-part">
           <div class="description" id="1">
               <h3>Mutual Fund</h3>
               <div class="line_lgao"></div>
-              <div class="flex-containers" style="display: flex;">
+              <div class="flex-container">
                   <img src="img/mutual_fund.avif" alt="" style="width: 50%;">
                   <p style="padding: 30px;margin-top: 15px;">Mutual funds have become a popular tool for investments in the Equity Markets. Well-regulated Industry, Expert Fund Managers, Innovative offerings, Ease of Transactions, Transparency are the few salient features of this investment methodology. The inculcation of discipline through Systematic Investment Plan has helped millions of Indian families achieve their financial goals. An easy & convenient way to create wealth in the long term makes Mutual Fund the preferred choice of many investors.</p>
               </div>
@@ -278,22 +276,22 @@ h3{
           <div class="description" id="2">
               <h3>Fixed Income Instruments</h3>
               <div class="line_lgao"></div>
-              <div class="flex-containers" style="display: flex;">
+              <div class="flex-container">
                   <img src="img/fixed.jpg" alt="" style="width: 50%;">
-                  <p style="padding: 30px;margin-top:110px;">For Investors with goals for fixed income, a bouquet of products ranging from Bonds, NCD, Corporate Fixed Deposits is available. These instruments also help investors maintain their asset allocation and fund the most important goals of their life, like Children’s Higher Education, Children’s Marriage, and Monthly Income need during Retirement.</p>
+                  <p style="padding: 30px;margin-top:50px;">For Investors with goals for fixed income, a bouquet of products ranging from Bonds, NCD, Corporate Fixed Deposits is available. These instruments also help investors maintain their asset allocation and fund the most important goals of their life, like Children’s Higher Education, Children’s Marriage, and Monthly Income need during Retirement.</p>
               </div>
           </div>
       
           <div class="description" id="3">
               <h3>Insurance</h3>
               <div class="line_lgao"></div>
-              <div class="flex-containers" style="display: flex;">
+              <div class="flex-container">
                   <img src="img/insurance.jpg" alt="" style="width: 50%;">
-                  <p style="padding: 30px;margin-top:80px;">Insurance protection is a must for everyone in this journey of achieving financial goals. Any untoward incident like untimely death or major sickness can derail the financial journey of not only the individual but of the entire family. Hence various types of Insurance cover, namely Term Insurance and Mediclaim Policies, are must for each and every household.</p>
+                  <p style="padding: 30px;margin-top:50px;">Insurance protection is a must for everyone in this journey of achieving financial goals. Any untoward incident like untimely death or major sickness can derail the financial journey of not only the individual but of the entire family. Hence various types of Insurance cover, namely Term Insurance and Mediclaim Policies, are must for each and every household.</p>
               </div>
           </div>
       </div>
-
+      
     </div>
  </div>
 
@@ -334,7 +332,6 @@ h3{
         }
     }
 </script>
-
    <!-- Footer Start -->
    <div
    class="container-fluid bg-dark footer wow fadeIn"
