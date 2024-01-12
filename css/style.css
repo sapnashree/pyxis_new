@@ -77,7 +77,7 @@
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
-    
+    background: white;
     height: 60px;
 }
 .navbar.sticky-top.scrolled {
@@ -94,7 +94,7 @@
 .navbar .navbar-nav .nav-link {
     margin-left: 25px;
     padding: 10px 0;
-    color: white;
+    color: black;
     font-weight: 500;
     outline: none;
     text-transform: uppercase;
@@ -200,6 +200,10 @@
 .jabbho{
     padding-top: 11rem !important;
     padding-bottom: 3rem !important;
+    margin-left: 16px;
+}
+.abkab{
+    margin-left: 16px;
 }
 .kbbb{
     padding-top: 8rem !important;
@@ -269,7 +273,7 @@
 }
 
 .container.facts .facts-text {
-    background: linear-gradient(rgba(1, 95, 201, .9), rgba(1, 95, 201, .9)), url(../img/carousel-1.jpg) center right no-repeat;
+    background: linear-gradient(rgba(1, 95, 201, .9), rgba(1, 95, 201, .9)), url(../img/carousel-11.jpeg) center right no-repeat;
     background-size: cover;
 }
 
