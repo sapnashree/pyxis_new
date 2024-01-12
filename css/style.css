@@ -77,21 +77,31 @@
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
+    
+    height: 60px;
+}
+.navbar.sticky-top.scrolled {
+    background-color: white;
+    top: 0;
+    height: 60px;
 }
 
 .navbar .navbar-brand img {
-    max-height:100px;
+    max-height:80px;
 }
+
 
 .navbar .navbar-nav .nav-link {
     margin-left: 25px;
     padding: 10px 0;
-    color: #696E77;
+    color: white;
     font-weight: 500;
     outline: none;
     text-transform: uppercase;
 }
-
+.navbar.scrolled .navbar-nav .nav-link {
+    color: black;
+}
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
@@ -185,9 +195,16 @@
 
 .page-header {
     background: url(../img/About_banner.jpg) no-repeat;
-    background-size: cover;
+    background-size: cover;height: 550px;
 }
-
+.jabbho{
+    padding-top: 11rem !important;
+    padding-bottom: 3rem !important;
+}
+.kbbb{
+    padding-top: 8rem !important;
+    padding-bottom: 3rem !important;
+}
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
     font-weight: 500;
@@ -198,6 +215,10 @@
     color: white;font-size: 18px;
 }
 
+.page-header2 .breadcrumb-item a,
+.page-header2 .breadcrumb-item+.breadcrumb-item::before {
+    color: white;font-size: 18px;
+}
 .page-header .breadcrumb-item a:hover,
 .page-header .breadcrumb-item.active {
     color: #ffffff;
@@ -270,7 +291,7 @@
 .service-item {
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);background: #ffffff;
 }
 
 .service-item .service-icon {
