@@ -34,14 +34,11 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
     <style>
-        /* Set the maximum width of the container */
          .container_gallery {
            max-width: 1200px;
            margin: 0 auto;
            padding: 20px;
          }
-     
-         /* Style for desktop view - three images in a row */
          .gallery_gallery {
            display: flex;
            flex-wrap: wrap;
@@ -49,11 +46,15 @@
          }
      
          .gallery_gallery img {
-           width: 30%; /* Adjust as needed */
+           width: 30%; 
            margin-bottom: 20px;
+           filter: grayscale(100%); 
+  transition: filter 0.3s;
          }
-     
-         /* Style for mobile view - one image in a row */
+         .gallery_gallery img:hover {
+  filter: grayscale(0%);
+}
+        
          @media (max-width: 768px) {
            .gallery_gallery img {
              width: 100%;
@@ -73,7 +74,7 @@
     <!-- Spinner End -->
     <!-- Navbar Start -->
     <nav  class="navbar navbar-expand-lg  navbar-light sticky-top px-4 px-lg-5">
-      <a href="index.html" class="navbar-brand d-flex align-items-center" style="margin-top: 60px;">
+      <a href="index.html" class="navbar-brand d-flex align-items-center ab_hi">
         <h1 class="m-0">
           <img
             class="img-fluid me-3"
@@ -99,20 +100,18 @@
 
    <!-- Page Header Start -->
 
-   <div   class="container-fluid page-header py-5 mb-5 wow fadeIn"  data-wow-delay="0.1s" style="background: url(img/founder.jpg) no-repeat;
-   background-size: cover;height: 450px;">
-   
-  </div>
-
+   <div   class="container-fluid page-header py-5 mb-5 wow fadeIn own_er"  data-wow-delay="0.1s" style="background: url(img/founder.jpg) no-repeat;
+   background-size: cover;"> </div>
    <!-- Page Header End -->
+
          <!-- About Start -->
          <section class="ownerone" id="ownerone"> 
          <div class="container-xxl py-5">
            <div class="container">
              <div class="row g-5 align-items-center">
                <div class="col-lg-6 maincontent" style="font-size: 1rem;">
-             <img src="img/hello.png" alt="" style="width: 50%;margin-left: -38px;" class="wow zoomIn"> 
-                 <p class="mb-4 wow fadeInUp"  data-wow-delay="0.3s" style="margin-top: -52px;"> I Am  Prashant Shejwal, <br> founder of Pyxis Wealth Private Limited,
+             <img src="img/hello.png" alt="" class="wow zoomIn hhell_o"> 
+                 <p class="mb-4 wow fadeInUp "  data-wow-delay="0.3s" style="margin-top: -52px;text-align: justify;"> I Am  Prashant Shejwal, <br> founder of Pyxis Wealth Private Limited,
                    Pune, providing various financial services to clients. He has
                    twenty years of experience in the Financial Services Industry.
                    Backed up by Post Graduation Diploma in Management Studies and
@@ -120,13 +119,13 @@
                    expertise in offering end to end financial services to clients.
                  </p>
                  <p class="mb-4 wow fadeInUp"
-                 data-wow-delay="0.3s">
+                 data-wow-delay="0.3s" style="text-align: justify;">
                    He is a  Certified
                    International Wealth Manager and  Certified Life Planner from
                    the Kinder Institute of Life Planning, USA.
                  </p>
                  <p class="mb-4 wow fadeInUp"
-                 data-wow-delay="0.3s">
+                 data-wow-delay="0.3s"  style="text-align: justify;">
                    With his wide experience in this financial services field, he has
                    been associated with ICICI Securities as a Consultant Trainer,
                    where he has conducted the Stock market fundamentals two-day
@@ -152,18 +151,16 @@
                <div class="row g-5 align-items-center">
                    <h2 class="mb-4 wow fadeInUp" data-wow-delay="0.3s" style="width: 100%;  left: 0; position: relative;  text-align: center;">Activities For Spreading Awareness</h2>
                   
-                           <div class="container_gallery">
-         <div class="gallery_gallery">
-            <img src="img/Prashant-Shejwal-1.jpeg" alt="Image 2">
-                               <!--<img src="img/Prashant-Shejwal-7.jpg" alt="Image 3">-->
-                               <img src="img/imgPrashant-Shejwal-6.jpeg" alt="Image 4">
-                                <img src="img/Prashant-Shejwal-2-2.jpeg" alt="Image 3">
-                               <!--<img src="img/Prashant-Shejwal-11.jpg" alt="Image 4">-->
-                               <img src="img/Prashant-Shejwal-3.jpg.jpeg" alt="Image 4">
-                                <img src="img/Prashant-Shejwal-5-1.jpeg" alt="Image 4">
-                             <img src="img/Prashant-Shejwal-7.jpeg" alt="Image 3">
-         </div>
-       </div>
+            <div class="container_gallery">
+               <div class="gallery_gallery">
+                    <img src="img/Prashant-Shejwal-1.jpeg" alt="Image 2">
+                    <img src="img/imgPrashant-Shejwal-6.jpeg" alt="Image 4">
+                    <img src="img/Prashant-Shejwal-2-2.jpeg" alt="Image 3">
+                    <img src="img/Prashant-Shejwal-3.jpg.jpeg" alt="Image 4">
+                    <img src="img/Prashant-Shejwal-5-1.jpeg" alt="Image 4">
+                    <img src="img/Prashant-Shejwal-7.jpeg" alt="Image 3">
+                </div>
+            </div>
                </div>
              </div>
            </div>
