@@ -509,7 +509,7 @@
 .mis-vis {
   flex: 1; 
    box-sizing: border-box;
-  
+  font-size: 14px;
    margin-left:23%;
    margin-top: 20%;
 }
@@ -541,7 +541,8 @@
     margin-top: 60px;
 }
 .new_tag{
-    margin-top: -70px;margin-left:-65px;
+    margin-top: 50px;
+    margin-left:-65px;
 }
 .yekaisehua{
     width: 30%;padding: 20px;  box-sizing: border-box; margin-left: 13%;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  margin-right: 20px; margin-top: 20px;margin-bottom: 20px;
@@ -562,6 +563,17 @@
     width: 50%;margin-left: -38px;
 }
 @media (max-width: 768px) {
+    .py-5 {
+        padding-top:1rem !important;
+        padding-bottom: 3rem !important;
+    }
+    .flex-part{
+        margin-left: -14px;
+    }
+    .abteamhai{
+        padding-left:0rem !important;
+        min-height: 200PX;
+    }
     .hhell_o{
         width: 50%;
         margin-left: -6px;
@@ -574,7 +586,8 @@
         margin-top: 0px;
     }
     .new_tag{
-        margin-top: 313px;
+        /* margin-top: 313px; */
+        margin-top: -150px;
           margin-left: 65px;
       }
       .page-header {
