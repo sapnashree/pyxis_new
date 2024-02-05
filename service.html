@@ -37,7 +37,7 @@
 
 <style>
     .container_1{
-        padding:60px;
+        padding:20px;
         background:linear-gradient(#b7b7b7e0, #c9c9c9e0), url(img/serve.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,10 +89,7 @@ h3{
     color: #4e4f52;
     background: white;
     padding: 40px;font-size: 14px;
-    /* margin-left: 26px;
-    margin-right: 26px;
-    width: 100%;
-    height: 100%; */
+    margin-top:1%; 
     margin-left: 10%;
     margin-right: 19px;
     width: 80%;
@@ -137,7 +134,9 @@ h3{
   width: 50%;
 }
 .text_fundd{
-  padding: 30px;margin-top: 15px;
+  padding: 30px;
+  margin-top: 15px;
+  font-size: 16px;
 }
 @media (max-width: 768px) {
     .flex-container {
@@ -173,7 +172,7 @@ h3{
     font-weight: 300;
     padding: 10px;
     margin-left: -10px;
-    width: 218px;
+    width: 298px;
 }
 .arrow{
     display:none
@@ -258,6 +257,10 @@ h3{
                 <i class="fas fa-shield-alt icon_n"></i>
                 <h4 class="lis_name">Insurance</h4>
             </div>
+            <div class="flex-item" onclick="showDescription('4', this)" data-description="3">
+              <i class="fas fa-shield-alt icon_n"></i>
+              <h4 class="lis_name">PMS</h4>
+          </div>
             </div>
 
         </div>
@@ -276,7 +279,7 @@ h3{
               <div class="line_lgao"></div>
               <div class="flex-containers new_flex" style="display: flex;">
                   <img src="img/fixed.jpg" alt="" class="fundddd">
-                  <p class="text_fundd">For Investors with goals for fixed income, a bouquet of products ranging from Bonds, NCD, Corporate Fixed Deposits is available. These instruments also help investors maintain their asset allocation and fund the most important goals of their life, like Children’s Higher Education, Children’s Marriage, and Monthly Income need during Retirement.</p>
+                  <p class="text_fundd" style="margin-top: 40px;">For Investors with goals for fixed income, a bouquet of products ranging from Bonds, NCD, Corporate Fixed Deposits is available. These instruments also help investors maintain their asset allocation and fund the most important goals of their life, like Children’s Higher Education, Children’s Marriage, and Monthly Income need during Retirement.</p>
               </div>
           </div>
       
@@ -285,9 +288,18 @@ h3{
               <div class="line_lgao"></div>
               <div class="flex-containers new_flex" style="display: flex;">
                   <img src="img/insurance.jpg" alt="" class="fundddd">
-                  <p class="text_fundd">Insurance protection is a must for everyone in this journey of achieving financial goals. Any untoward incident like untimely death or major sickness can derail the financial journey of not only the individual but of the entire family. Hence various types of Insurance cover, namely Term Insurance and Mediclaim Policies, are must for each and every household.</p>
+                  <p class="text_fundd" style="margin-top: 50px;">Insurance protection is a must for everyone in this journey of achieving financial goals. Any untoward incident like untimely death or major sickness can derail the financial journey of not only the individual but of the entire family. Hence various types of Insurance cover, namely Term Insurance and Mediclaim Policies, are must for each and every household.</p>
               </div>
           </div>
+          <div class="description" id="4">
+            <h3>Portfolio Management Services</h3>
+            <div class="line_lgao"></div>
+            <div class="flex-containers new_flex" style="display: flex;">
+                <img src="img/pms.jpg" alt="" class="fundddd">
+                <p class="text_fundd"> Portfolio Management Services is product suitable  for investors who are willing to experience the flavour of Direct Stocks yet want a professional team to manage it. It is well regulated product aimed at creating wealth over longer period of time. <br>
+                  Investors benefit from highly experienced Portfolio Managers , a sound investing philosophy , innovative product mix and structured approach for Equity Investing.</p>
+            </div>
+        </div>
       </div>
 
     </div>
