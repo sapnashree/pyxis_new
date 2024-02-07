@@ -54,23 +54,20 @@ h3{
     color: #063970;
 }
     .flex-item {
-        text-align: center;
+      text-align: center;
     margin: 20px;
-    width: 60%;;
+    width: 60%;
     box-sizing: border-box;
     background: #063970;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    height: 87px;
+    height: 50px;
+    color: white !important;
+    padding: 10px;
+ 
     }
     .lis_name{
         font-size: .9rem;
-    text-transform: capitalize;
-    background: black;
-    /* background: grey; */
-    color: white;
-    /* height: 59px; */
-    font-weight: 300;
-    padding: 10px;
+   color: white;
     }
 .line_lgao{
     position: relative;
@@ -121,7 +118,7 @@ h3{
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 15px solid var(--primary);
-    top: -4%;
+    top:50%;
     left: 42%;
     transform: rotate(180deg);
 }
@@ -140,10 +137,10 @@ h3{
 }
 @media (max-width: 768px) {
     .flex-container {
-    display: flex;
-    padding: 20px;margin-left: 0px;
-    margin-right:0px ;
-    flex-direction: column !important;
+      display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+   
 }
    .clientss {
        display: flex;
@@ -155,24 +152,24 @@ h3{
     height: auto;
 }
 .flex-item {
-    text-align: center;
-    margin: 20px;
-    width: 100%;
+  text-align: center;
+    margin: 4px;
+    width: 33%;
     box-sizing: border-box;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: #063970 1.95px 1.95px 2.6px;
+    /* box-shadow: #063970 1.95px 1.95px 2.6px; */
+    height: 66px;
 }
 .lis_name {
     font-size: .9rem;
     text-transform: capitalize;
-    background: grey;
     color: white;
-    height: 59px;
+    /* height: 59px;
     font-weight: 300;
     padding: 10px;
     margin-left: -10px;
-    width: 298px;
+    width: 298px; */
 }
 .arrow{
     display:none
@@ -244,23 +241,23 @@ h3{
         <div class=" flex-part">
             <div class="flex-container">
               <div class="flex-item" onclick="showDescription('1', this)" data-description="1">
-                <i class="fas fa-chart-pie icon_n"></i>
-                <h4 class="lis_name">Mutual Fund</h4>
+                <!-- <i class="fas fa-chart-pie icon_n"></i> -->
+                <h4 class="lis_name" style="margin-top: 10px;">Mutual Fund</h4>
             </div>
-        
-            <div class="flex-item" onclick="showDescription('2', this)" data-description="2">
-                <i class="fas fa-chart-line icon_n"></i>
-                <h4 class="lis_name"> Fixed Income Instruments</h4>
+            <div class="flex-item" onclick="showDescription('4', this)" data-description="3" style="background: #fdb915;">
+              <!-- <i class="fas fa-shield-alt icon_n"></i> -->
+              <h4 class="lis_name" style="margin-top: 10px;">PMS</h4>
+          </div>
+            <div class="flex-item" onclick="showDescription('2', this)" data-description="2" style="background: #f94f00;">
+                <!-- <i class="fas fa-chart-line icon_n"></i> -->
+                <h4 class="lis_name" > Fixed Income Instruments</h4>
             </div>
         
             <div class="flex-item" onclick="showDescription('3', this)" data-description="3">
-                <i class="fas fa-shield-alt icon_n"></i>
-                <h4 class="lis_name">Insurance</h4>
+                <!-- <i class="fas fa-shield-alt icon_n"></i> -->
+                <h4 class="lis_name" style="margin-top: 10px;">Insurance</h4>
             </div>
-            <div class="flex-item" onclick="showDescription('4', this)" data-description="3">
-              <i class="fas fa-shield-alt icon_n"></i>
-              <h4 class="lis_name">PMS</h4>
-          </div>
+        
             </div>
 
         </div>
